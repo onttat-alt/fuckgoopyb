@@ -1,4 +1,3 @@
-/* Temel Sıfırlama ve Arka Plan */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Press Start 2P', cursive;
-    /* Banner'daki koyu mavi gökyüzü tonları ve piksel dokusu */
     background-color: #006699;
     background-image: 
         radial-gradient(rgba(74, 237, 136, 0.15) 2px, transparent 2px),
@@ -19,7 +17,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Üst Banner Stili */
 .top-banner {
     width: 100%;
     background-color: #005580;
@@ -35,11 +32,11 @@ body {
     max-height: 280px;
     object-fit: cover;
     object-position: center;
-    image-rendering: pixelated; /* Piksel art keskinliğini korur */
+    image-rendering: pixelated;
     display: block;
 }
 
-/* Sayfanın Geri Kalanı */
+
 .main-container {
     flex: 1;
     display: flex;
@@ -48,7 +45,6 @@ body {
     padding: 40px 20px;
 }
 
-/* Piksel Çerçeveli Süslü Kutu */
 .slime-box {
     position: relative;
     background-color: #092218;
@@ -63,10 +59,9 @@ body {
     animation: slimeFloat 3s ease-in-out infinite;
 }
 
-/* Kutunun Üstündeki Küçük Karakter İkonu */
 .avatar-badge {
-    width: 76px;
-    height: 76px;
+    width: 256px;
+    height: 256px;
     border: 4px solid #4aed88;
     background-color: #000;
     image-rendering: pixelated;
@@ -77,7 +72,6 @@ body {
     box-shadow: 0 6px 0 #092218;
 }
 
-/* Ana Başlık (FUCK GOOPYB) */
 .main-title {
     font-size: clamp(2rem, 5vw, 4.2rem);
     color: #9effa9; /* Slime parlama rengi */
@@ -91,7 +85,6 @@ body {
         0 0 20px rgba(74, 237, 136, 0.6);
 }
 
-/* Hafif Süzülme Animasyonu */
 @keyframes slimeFloat {
     0%, 100% {
         transform: translateY(0px);
@@ -101,7 +94,6 @@ body {
     }
 }
 
-/* Mobil Uyum */
 @media (max-width: 600px) {
     .slime-box {
         padding: 45px 25px 35px;
